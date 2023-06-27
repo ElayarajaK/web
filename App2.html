@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            top: 30px;
+            left: 40px;
+           position: absolute;
+            width:  40%;
+            background-color: rgb(52, 158, 70);
+            color: aquamarine;
+
+            border-radius: 5px;
+            padding: 2%;
+            margin: 1%;
+            z-index: 2;
+            
+        }
+        .box3{
+            top: 60px;
+            left: 80px;
+           position: absolute;
+            width:  40%;
+            background-color: rgb(235, 39, 13);
+            color: aquamarine;
+
+            border-radius: 5px;
+            padding: 2%;
+            margin: 1%;
+            z-index: 3;
+            
+        }
+        .box2{
+            position: relative;
+            width:  40%;
+            background-color: rgb(21, 132, 243);
+            color: aquamarine;
+
+            border-radius: 5px;
+            padding: 2%;
+            margin: 1%;
+        }
+
+        .wrapeer{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(10,1fr);
+        }
+        .one{
+            /*grid-column: 1/5;*/
+        }
+        div{
+          
+            padding: 1%;
+            border: 2px solid blue;
+        }
+
+        @media (max-width:900px) {
+            .wrapeer{
+                display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(6,1fr);
+            }
+            
+        }
+        @media (max-width:600px) {
+            .wrapeer{
+                display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            }
+            
+        }
+
+
+        @media (max-width:1000px) {
+            body{
+               background-color: red; 
+            }
+            
+        }
+        @media (max-width:800px) {
+            body{
+               background-color: green; 
+            }
+            
+        }
+        @media (max-width:600px) {
+            body{
+               background-color: rgb(104, 228, 104); 
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<!--
+    <div class="box1 col-md-3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat expedita qui necessitatibus excepturi adipisci perspiciatis harum eos, est, rem culpa nihil nulla vel, minima veritatis commodi quos vitae! Eaque?
+        </p>
+    </div>
+    <div class="box3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam suscipit architecto quam tempore quas, amet cum rem reprehenderit fugit veniam nesciunt sunt quibusdam vel voluptatibus voluptate velit dolore excepturi!
+        </p>
+    </div>
+
+    <div class="box2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam suscipit architecto quam tempore quas, amet cum rem reprehenderit fugit veniam nesciunt sunt quibusdam vel voluptatibus voluptate velit dolore excepturi!
+        </p>
+    </div>
+-->
+
+    <div class="wrapeer">
+        <div class="one">
+            one
+        </div>
+        <div class="two">
+            two
+        </div>
+        <div class="three">
+            three
+        </div>
+        <div class="four">
+            four
+        </div>
+
+
+        <div class="five">
+            one
+        </div>
+        <div class="two">
+            two
+        </div>
+        <div class="three">
+            three
+        </div>
+        <div class="four">
+            four
+        </div>
+
+
+
+        <div class="nine">
+            one
+        </div>
+        <div class="two">
+            two
+        </div>
+        <div class="three">
+            three
+        </div>
+        <div class="four">
+            four
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

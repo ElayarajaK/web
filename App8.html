@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+         /*
+            Function is used reusablity
+         */
+
+         /*
+        pre defined function
+         
+        alert();
+        Number();
+        Boolean();
+        prompt();
+        confirm();*/
+
+        /*
+            userdefined function
+
+
+
+        */
+       //declaring UD function
+        function getData(){
+            document.writeln("<h1> i am Function</h1>")
+        }
+
+
+        getData();
+
+        getData();
+        getData();
+        getData();
+        
+
+        function getDataPara(name){
+            document.writeln("<h1>Args Function : "+ name  +"</h1>")
+        }
+       
+        getDataPara("java");
+
+        getDataPara("python")
+        getDataPara("React")
+
+        /*
+            student s_id
+            student name
+            student marks
+            student result
+            student total_marks
+
+        */
+
+        //default parameter or arguments
+        function print_Student_Details(s_id,name,marks1,marks2,marks3,college_name="IIT")
+        {
+            document.writeln(`<h1>My name : `+name+` and my id is `+s_id+`
+             My marks is `+marks1+', '+marks2+', '+marks3+` my result is : `+findResult(marks1,marks2,marks3)+`
+             total marks is `+sumMarks(marks1,marks2,marks3)+` and avg : `+findAvg(sumMarks(marks1,marks2,marks3),3) +`
+              and my college : `+college_name+`</h1>`)
+
+             
+        }
+
+        function sumMarks(marks1,marks2,marks3){
+            let Sum = marks1+marks2+marks3;
+            return Sum;
+
+        }
+
+        function findAvg(sum,no_sub){
+            let avg = sum/no_sub;
+
+            return avg;
+        }
+        function findResult(marks1,marks2,marks3)
+        {
+            if(marks1 > 40 && marks2 > 40 && marks3 > 40){
+                return "Pass";
+            }
+            return "fail";
+        }
+
+        /*Student_Details(20101,"Raja",100,"pass",500)
+        Student_Details(30011,"Rakesh",200,"pass",600)
+        Student_Details(30011,"Vikash",400,"pass",500)
+        Student_Details(2011,"Dillhi",100,"pass",500)
+        let getDetails =    Student_Details(4033,"Sham",100,"pass",500)
+
+        alert(getDetails)*/
+        print_Student_Details(2011,"Raja",100,200,300)
+        print_Student_Details(2022,"Sham",10,20,400)
+        
+    </script>
+</body>
+</html>

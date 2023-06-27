@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Globle we can access from anywhere
+       
+
+        function Add(arg1,arg2){
+            //Result variable is called as local variable
+           let  Result = arg1+arg2;
+
+            document.writeln("<h1>"+Result+"</h1>")
+        }
+
+        Add(100,200)
+       // Uncaught ReferenceError: Result is not defined
+        document.writeln("<h1>"+Result+"</h1>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let Marks  = Number( prompt("Enter the Marks"));
+        let Result=null;
+
+     /*if(Marks < 40){
+            Result = "<h1> Fail</h1>"
+        }
+        else{
+            Result ="<h1> pass</h1>";
+        }*/
+
+      Result =   (Marks < 40)?(Marks < 10)?"<h1> Marks is too low</h1>":
+      (Marks < 20 && Marks > 10)?"<h1> Marks is between 10 to 20 </h1>":
+      "<h1> Marks is Above 20</h1>": "<h1> pass</h1>";
+
+     document.writeln(Result)
+    </script>
+</body>
+</html>

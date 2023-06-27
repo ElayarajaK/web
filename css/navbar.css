@@ -1,0 +1,23 @@
+
+.navbar{
+    background-color: rgb(95, 95, 179);
+    margin: 1%;
+    width: 100%;
+    padding: 1%;
+    border-radius: 10px;
+   
+
+}
+
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+ul{
+    list-style-type:none;
+}
+
+li{
+    display: inline-block;
+}
